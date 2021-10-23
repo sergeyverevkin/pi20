@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30709.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pi202Form", "WindowsFormsApp1\pi202Form.csproj", "{0371A037-EBB6-4F47-BA5F-D0693A1F2BE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pi202.a211023", "ClassLibrary1\pi202.a211023.csproj", "{DD2106B4-51E9-4A49-BF43-22708497CB99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0371A037-EBB6-4F47-BA5F-D0693A1F2BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0371A037-EBB6-4F47-BA5F-D0693A1F2BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0371A037-EBB6-4F47-BA5F-D0693A1F2BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0371A037-EBB6-4F47-BA5F-D0693A1F2BE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD2106B4-51E9-4A49-BF43-22708497CB99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD2106B4-51E9-4A49-BF43-22708497CB99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD2106B4-51E9-4A49-BF43-22708497CB99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD2106B4-51E9-4A49-BF43-22708497CB99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4631C353-9764-4DE6-A2AA-3B52B367C698}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+Build\
+bin\
+obj\
+/.vs
+/lab3.Stream/obj
+/pi202.a211023/obj
+/pi202Form/obj
