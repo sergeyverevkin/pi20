@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pi202Form", "pi202Form\pi20
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pi202.a211023", "pi202.a211023\pi202.a211023.csproj", "{DD2106B4-51E9-4A49-BF43-22708497CB99}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab3.Stream", "lab3.Stream\lab3.Stream.csproj", "{7C9EE16E-D13B-457D-9A2A-EDA50E5AF461}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{DD2106B4-51E9-4A49-BF43-22708497CB99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD2106B4-51E9-4A49-BF43-22708497CB99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD2106B4-51E9-4A49-BF43-22708497CB99}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7C9EE16E-D13B-457D-9A2A-EDA50E5AF461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C9EE16E-D13B-457D-9A2A-EDA50E5AF461}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C9EE16E-D13B-457D-9A2A-EDA50E5AF461}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C9EE16E-D13B-457D-9A2A-EDA50E5AF461}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
