@@ -78,7 +78,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\pi202.a211023.csproj">
+    <ProjectReference Include="..\pi202.a211023\pi202.a211023.csproj">
       <Project>{dd2106b4-51e9-4a49-bf43-22708497cb99}</Project>
       <Name>pi202.a211023</Name>
     </ProjectReference>
