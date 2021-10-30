@@ -1,0 +1,8 @@
+C:\Users\Verevkin\source\repos\pi20\Build\Xml.exe.config
+C:\Users\Verevkin\source\repos\pi20\Build\Xml.exe
+C:\Users\Verevkin\source\repos\pi20\Build\Xml.pdb
+C:\Users\Verevkin\source\repos\pi20\labs\Xml\obj\Debug\Xml.csprojAssemblyReference.cache
+C:\Users\Verevkin\source\repos\pi20\labs\Xml\obj\Debug\Xml.csproj.CoreCompileInputs.cache
+C:\Users\Verevkin\source\repos\pi20\labs\Xml\obj\Debug\Xml.exe
+C:\Users\Verevkin\source\repos\pi20\labs\Xml\obj\Debug\Xml.pdb
+C:\Users\Verevkin\Source\Repos\pi20\Build\DATA\SfoMqVtb.xml

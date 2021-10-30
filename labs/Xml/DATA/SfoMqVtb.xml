@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ArrayOfCNameObjectEntry xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CNameObjectEntry>
+    <Key>Интервал проверки</Key>
+    <Value xsi:type="xsd:int">10</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Число потоков</Key>
+    <Value xsi:type="xsd:int">8</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Push-сервис очереди: адрес сервиса</Key>
+    <Value xsi:type="xsd:string">127.0.0.1</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Push-сервис очереди: порт сервиса</Key>
+    <Value xsi:type="xsd:string">9907</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Pop-сервис очереди: адрес сервиса</Key>
+    <Value xsi:type="xsd:string">127.0.0.1</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Pop-сервис очереди: порт сервиса</Key>
+    <Value xsi:type="xsd:string">9906</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Количество входящих сообщений в одной пачке</Key>
+    <Value xsi:type="xsd:int">50</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Максимальная длина сообщений (Мб)</Key>
+    <Value xsi:type="xsd:int">10</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Адрес сервера</Key>
+    <Value xsi:type="xsd:string">127.0.0.1</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Имя менеджера очередей</Key>
+    <Value xsi:type="xsd:string" />
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Порт менеджера очередей</Key>
+    <Value xsi:type="xsd:string">1414</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Имя канала соединения с сервером</Key>
+    <Value xsi:type="xsd:string">SYSTEM.DEF.SVRCONN</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Авторизация: имя пользователя</Key>
+    <Value xsi:type="xsd:string" />
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Авторизация: пароль</Key>
+    <Value xsi:type="xsd:string">$*AAAAAIsmp0m4gsdLPcqUobcbUS0=*$</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Использовать две очереди</Key>
+    <Value xsi:type="xsd:boolean">false</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Имя очереди входящих сообщений для ПСЗ</Key>
+    <Value xsi:type="xsd:string" />
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Имя очереди исходящих сообщений от ПСЗ</Key>
+    <Value xsi:type="xsd:string" />
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Имя очереди входящих сообщений от НО</Key>
+    <Value xsi:type="xsd:string" />
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Имя очереди заданий на отправку квитанции о приеме</Key>
+    <Value xsi:type="xsd:string" />
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Имя очереди заданий на отправку уведомлений об отказе</Key>
+    <Value xsi:type="xsd:string" />
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Имя очереди заданий на отправку документов с описью</Key>
+    <Value xsi:type="xsd:string" />
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Имя очереди заданий на отправку уведомления о невозможности представления</Key>
+    <Value xsi:type="xsd:string" />
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Имя очереди результатов обработки заданий</Key>
+    <Value xsi:type="xsd:string" />
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Лог-файл: запись без переносов строк</Key>
+    <Value xsi:type="xsd:boolean">false</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Лог-файл: запись отладочной информации</Key>
+    <Value xsi:type="xsd:boolean">false</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Лог-файл: максимальный размер</Key>
+    <Value xsi:type="xsd:int">128</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Лог-файл: срок хранения</Key>
+    <Value xsi:type="xsd:int">30</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Лог-файл: запуск процедуры удаления</Key>
+    <Value xsi:type="xsd:int">190</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Лог-файл: срок архивирования</Key>
+    <Value xsi:type="xsd:int">2</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Срок архивирования DoneDir-файлов</Key>
+    <Value xsi:type="xsd:int">5</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Срок хранения DoneDir-файлов</Key>
+    <Value xsi:type="xsd:int">10</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Каталог конфигуратора приложения</Key>
+    <Value xsi:type="xsd:string">C:\ProgramData\SFO-GNIVC\SfoMqVtb\</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Максимальный размер массива файлов при сканировании</Key>
+    <Value xsi:type="xsd:int">500</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Интервал сканирования каталога ошибок</Key>
+    <Value xsi:type="xsd:int">30</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Интервал сканирования каталога ошибок очереди</Key>
+    <Value xsi:type="xsd:int">60</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Разрешить запуск в режиме приложения</Key>
+    <Value xsi:type="xsd:boolean">false</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Хранилище сертификатов: имя</Key>
+    <Value xsi:type="xsd:int">1</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Хранилище сертификатов: тип</Key>
+    <Value xsi:type="xsd:int">1</Value>
+  </CNameObjectEntry>
+  <CNameObjectEntry>
+    <Key>Предельное количество одновременных сетевых соединений</Key>
+    <Value xsi:type="xsd:int">128</Value>
+  </CNameObjectEntry>
+</ArrayOfCNameObjectEntry>
