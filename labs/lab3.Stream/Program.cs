@@ -37,12 +37,16 @@ namespace ConsoleApp1
         private static void writeStream(Stream fsIn, Stream fsOut)
         {
             fsIn.Seek(0, SeekOrigin.Begin);
+            // проход по входным данным
             while (fsIn.Length - 1 >= fsIn.Position)
             {
                 byte[] btFrom = new byte[1];
                 fsIn.Read(btFrom, 0, 1);
-                if (btFrom[0] != 71)
+                // принятие решение о фильтрации
+                bool bFiltered = btFrom[0] != 71;        
+                if (bFiltered)
                 {
+                    // опциональная запись отфильтрованного символа
                     fsOut.Write(btFrom);
                 }
             }

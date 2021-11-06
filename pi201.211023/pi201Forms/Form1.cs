@@ -51,12 +51,13 @@ namespace pi201Forms
     {
       panMoneyLack.Enabled = (m_pGame.Machine.MachineState == EMachineState.MoneyLack);
       panResult.Enabled = (m_pGame.Machine.MachineState == EMachineState.Result);
-      panReturn.Enabled = (m_pGame.Machine.MachineState == EMachineState.Result) && m_pGame.Machine.CoinsOutside > 0;
+      panReturn.Enabled = (m_pGame.Machine.MachineState == EMachineState.Result); // && m_pGame.Machine.CoinsOutside > 0;
       panStakeWait.Enabled = (m_pGame.Machine.MachineState == EMachineState.WaitingPlayer);
       panStake.Enabled = (m_pGame.Machine.MachineState == EMachineState.WaitingTurn);
 
       labGameState.Text = m_pGame.Machine.MachineState.ToString();
       labMoney.Text = m_pGame.Player.Coins.ToString();
+      labResult.Text = m_pGame.Machine.CoinsOutside.ToString();
 
       numericUpDown1.Value = m_pGame.Machine.CoinsStake;
 
@@ -82,7 +83,14 @@ namespace pi201Forms
 
     private void btnStart_Click(object sender, EventArgs e)
     {
-      m_pGame.Turn();
+      m_pGame.Turn(m_pGame.Player, m_pGame.Machine);
+      h_RefreshPanels();
+    }
+
+    private void button2_Click(object sender, EventArgs e)
+    {
+      m_pGame.TakeAway(m_pGame.Player, m_pGame.Machine);
+      h_RefreshPanels();
     }
   }
 }

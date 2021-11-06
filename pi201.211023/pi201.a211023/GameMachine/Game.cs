@@ -19,7 +19,7 @@ namespace pi201.a211023.GameMachine
     public CGame(int iCoinsCount)
     {
       Player = new CPlayer(iCoinsCount);
-      Machine = new CMachine(2);
+      Machine = new CMachine(1);
     }
     #endregion
 
@@ -36,9 +36,13 @@ namespace pi201.a211023.GameMachine
 
     #endregion
     #region methods
-    public void Turn()
+    public void Turn(CPlayer pPlayer, CMachine pMachine)
     {
-      // TODO: брать удачливость игрока и вызывать метод автомата
+      Machine.Turn(pPlayer.LuckyRate);
+    }
+    public void TakeAway(CPlayer pPlayer, CMachine pMachine)
+    {
+      pPlayer.Coins += Machine.TakeAway();
     }
     #endregion
 

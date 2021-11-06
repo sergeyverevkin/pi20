@@ -22,6 +22,11 @@ namespace pi201.a211023.GameMachine
   public class CMachine
   {
     #region variables
+    /// <summary>
+    /// Время последнего выигрыша
+    /// </summary>
+    private DateTime m_dtLastWin = DateTime.Now;
+
     //  Количество монет внутри
     private int coins;
 
@@ -35,7 +40,7 @@ namespace pi201.a211023.GameMachine
     /// <summary>
     /// Коэффициент удачливости
     /// </summary>
-    public double LuckyRate { get; }
+    public double LuckyRate { get; private set; }
 
 
     /// <summary>
@@ -45,6 +50,18 @@ namespace pi201.a211023.GameMachine
 
 
     private int coinsStake;
+
+    internal int TakeAway()
+    {
+      int iCount = 0;
+      if (CoinsOutside > 0) {
+        iCount = CoinsOutside;
+        CoinsOutside = 0;
+      }
+      machineState = EMachineState.WaitingPlayer;
+      return iCount;
+    }
+
     /// <summary>
     /// Количество монет "ставка"
     /// </summary>
@@ -111,9 +128,68 @@ namespace pi201.a211023.GameMachine
       }
     }
 
-    public void Turn()
+    public void Turn(double dPlayerLuckyRate)
     {
-      throw new NotImplementedException();
+      // жадность автомата
+      double dDecreaseRate = coins < 30 ? 0.99 : 1;
+      if (m_dtLastWin < DateTime.Now.AddSeconds(-10)) {
+        dDecreaseRate = dDecreaseRate * 1.02;
+      }
+      // 0 .. 1
+      double dLuckyRate = (dPlayerLuckyRate + LuckyRate) * dDecreaseRate;
+      if (dLuckyRate >= 1) {
+        m_dtLastWin = DateTime.Now;
+        h_TurnPlayerWin();
+        return;
+      }
+
+      if (dLuckyRate <= 0) {
+        h_TurnPlayerFail();
+        return;
+      }
+
+      Random pR = new Random();
+      double dRnd = pR.NextDouble();
+      bool bWin = (dRnd < dLuckyRate);
+
+      // инверсия вероятности
+      if (DateTime.Now.Second == 0) {
+        bWin = !bWin;
+      }
+
+      if (bWin) {
+        m_dtLastWin = DateTime.Now;
+      }
+
+      // адаптация
+      if (bWin) {
+        LuckyRate *= 0.99;
+      } else {
+        LuckyRate *= 1.01;
+      }
+
+      if (bWin) {
+        h_TurnPlayerWin();
+      }
+      else {
+        h_TurnPlayerFail();
+      }
+    }
+
+    private void h_TurnPlayerFail()
+    {
+      this.coins += this.CoinsStake;
+      this.CoinsStake = 0;
+      machineState = EMachineState.Result;
+    }
+
+    private void h_TurnPlayerWin()
+    {
+      int iCount = this.CoinsStake * this.StakeMultiplex;
+      this.coins -= iCount;
+      this.CoinsOutside += this.CoinsStake + iCount; 
+      this.CoinsStake = 0;
+      machineState = EMachineState.Result;
     }
 
     #endregion

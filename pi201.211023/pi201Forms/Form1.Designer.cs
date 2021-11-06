@@ -36,6 +36,9 @@ namespace pi201Forms
       this.btnPlus = new System.Windows.Forms.Button();
       this.textBox1 = new System.Windows.Forms.TextBox();
       this.tabPage2 = new System.Windows.Forms.TabPage();
+      this.panel1 = new System.Windows.Forms.Panel();
+      this.label5 = new System.Windows.Forms.Label();
+      this.button3 = new System.Windows.Forms.Button();
       this.panMoneyLack = new System.Windows.Forms.Panel();
       this.label2 = new System.Windows.Forms.Label();
       this.panReturn = new System.Windows.Forms.Panel();
@@ -48,24 +51,21 @@ namespace pi201Forms
       this.btnStart = new System.Windows.Forms.Button();
       this.panStakeWait = new System.Windows.Forms.Panel();
       this.button1 = new System.Windows.Forms.Button();
+      this.panel2 = new System.Windows.Forms.Panel();
+      this.labGameState = new System.Windows.Forms.Label();
       this.labMoney = new System.Windows.Forms.Label();
       this.label3 = new System.Windows.Forms.Label();
-      this.labGameState = new System.Windows.Forms.Label();
       this.label1 = new System.Windows.Forms.Label();
-      this.panel1 = new System.Windows.Forms.Panel();
-      this.button3 = new System.Windows.Forms.Button();
-      this.label5 = new System.Windows.Forms.Label();
-      this.panel2 = new System.Windows.Forms.Panel();
       this.tabControl1.SuspendLayout();
       this.tabPage1.SuspendLayout();
       this.tabPage2.SuspendLayout();
+      this.panel1.SuspendLayout();
       this.panMoneyLack.SuspendLayout();
       this.panReturn.SuspendLayout();
       this.panResult.SuspendLayout();
       this.panStake.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
       this.panStakeWait.SuspendLayout();
-      this.panel1.SuspendLayout();
       this.panel2.SuspendLayout();
       this.SuspendLayout();
       // 
@@ -146,6 +146,35 @@ namespace pi201Forms
       this.tabPage2.Text = "Игровой автомат";
       this.tabPage2.UseVisualStyleBackColor = true;
       // 
+      // panel1
+      // 
+      this.panel1.Controls.Add(this.label5);
+      this.panel1.Controls.Add(this.button3);
+      this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+      this.panel1.Location = new System.Drawing.Point(3, 348);
+      this.panel1.Name = "panel1";
+      this.panel1.Size = new System.Drawing.Size(786, 73);
+      this.panel1.TabIndex = 16;
+      // 
+      // label5
+      // 
+      this.label5.AutoSize = true;
+      this.label5.Location = new System.Drawing.Point(5, 20);
+      this.label5.Name = "label5";
+      this.label5.Size = new System.Drawing.Size(98, 13);
+      this.label5.TabIndex = 11;
+      this.label5.Text = "Техобслуживание";
+      // 
+      // button3
+      // 
+      this.button3.Location = new System.Drawing.Point(312, 20);
+      this.button3.Name = "button3";
+      this.button3.Size = new System.Drawing.Size(163, 46);
+      this.button3.TabIndex = 3;
+      this.button3.Text = "Добавить деньги";
+      this.button3.UseVisualStyleBackColor = true;
+      this.button3.Click += new System.EventHandler(this.button3_Click);
+      // 
       // panMoneyLack
       // 
       this.panMoneyLack.Controls.Add(this.label2);
@@ -183,6 +212,7 @@ namespace pi201Forms
       this.button2.TabIndex = 11;
       this.button2.Text = "Забрать деньги";
       this.button2.UseVisualStyleBackColor = true;
+      this.button2.Click += new System.EventHandler(this.button2_Click);
       // 
       // panResult
       // 
@@ -259,6 +289,27 @@ namespace pi201Forms
       this.button1.UseVisualStyleBackColor = true;
       this.button1.Click += new System.EventHandler(this.button1_Click);
       // 
+      // panel2
+      // 
+      this.panel2.Controls.Add(this.labGameState);
+      this.panel2.Controls.Add(this.labMoney);
+      this.panel2.Controls.Add(this.label3);
+      this.panel2.Controls.Add(this.label1);
+      this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+      this.panel2.Location = new System.Drawing.Point(3, 3);
+      this.panel2.Name = "panel2";
+      this.panel2.Size = new System.Drawing.Size(786, 41);
+      this.panel2.TabIndex = 17;
+      // 
+      // labGameState
+      // 
+      this.labGameState.AutoSize = true;
+      this.labGameState.Location = new System.Drawing.Point(137, 14);
+      this.labGameState.Name = "labGameState";
+      this.labGameState.Size = new System.Drawing.Size(22, 13);
+      this.labGameState.TabIndex = 1;
+      this.labGameState.Text = "-----";
+      // 
       // labMoney
       // 
       this.labMoney.AutoSize = true;
@@ -277,15 +328,6 @@ namespace pi201Forms
       this.label3.TabIndex = 6;
       this.label3.Text = "Количество денег";
       // 
-      // labGameState
-      // 
-      this.labGameState.AutoSize = true;
-      this.labGameState.Location = new System.Drawing.Point(137, 14);
-      this.labGameState.Name = "labGameState";
-      this.labGameState.Size = new System.Drawing.Size(22, 13);
-      this.labGameState.TabIndex = 1;
-      this.labGameState.Text = "-----";
-      // 
       // label1
       // 
       this.label1.AutoSize = true;
@@ -294,47 +336,6 @@ namespace pi201Forms
       this.label1.Size = new System.Drawing.Size(89, 13);
       this.label1.TabIndex = 0;
       this.label1.Text = "Состояние игры";
-      // 
-      // panel1
-      // 
-      this.panel1.Controls.Add(this.label5);
-      this.panel1.Controls.Add(this.button3);
-      this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-      this.panel1.Location = new System.Drawing.Point(3, 348);
-      this.panel1.Name = "panel1";
-      this.panel1.Size = new System.Drawing.Size(786, 73);
-      this.panel1.TabIndex = 16;
-      // 
-      // button3
-      // 
-      this.button3.Location = new System.Drawing.Point(312, 20);
-      this.button3.Name = "button3";
-      this.button3.Size = new System.Drawing.Size(163, 46);
-      this.button3.TabIndex = 3;
-      this.button3.Text = "Добавить деньги";
-      this.button3.UseVisualStyleBackColor = true;
-      this.button3.Click += new System.EventHandler(this.button3_Click);
-      // 
-      // label5
-      // 
-      this.label5.AutoSize = true;
-      this.label5.Location = new System.Drawing.Point(5, 20);
-      this.label5.Name = "label5";
-      this.label5.Size = new System.Drawing.Size(98, 13);
-      this.label5.TabIndex = 11;
-      this.label5.Text = "Техобслуживание";
-      // 
-      // panel2
-      // 
-      this.panel2.Controls.Add(this.labGameState);
-      this.panel2.Controls.Add(this.labMoney);
-      this.panel2.Controls.Add(this.label3);
-      this.panel2.Controls.Add(this.label1);
-      this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-      this.panel2.Location = new System.Drawing.Point(3, 3);
-      this.panel2.Name = "panel2";
-      this.panel2.Size = new System.Drawing.Size(786, 41);
-      this.panel2.TabIndex = 17;
       // 
       // Form1
       // 
@@ -348,6 +349,8 @@ namespace pi201Forms
       this.tabPage1.ResumeLayout(false);
       this.tabPage1.PerformLayout();
       this.tabPage2.ResumeLayout(false);
+      this.panel1.ResumeLayout(false);
+      this.panel1.PerformLayout();
       this.panMoneyLack.ResumeLayout(false);
       this.panMoneyLack.PerformLayout();
       this.panReturn.ResumeLayout(false);
@@ -356,8 +359,6 @@ namespace pi201Forms
       this.panStake.ResumeLayout(false);
       ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
       this.panStakeWait.ResumeLayout(false);
-      this.panel1.ResumeLayout(false);
-      this.panel1.PerformLayout();
       this.panel2.ResumeLayout(false);
       this.panel2.PerformLayout();
       this.ResumeLayout(false);
