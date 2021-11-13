@@ -23,3 +23,5 @@ obj\
 /pi202.211023/pi202.a211023/obj
 /pi202.211023/pi202Form/obj
 /labs/.vs/labs/DesignTimeBuild
+/labs/Xml/obj/Debug
+/labs/packages/Newtonsoft.Json.13.0.1
