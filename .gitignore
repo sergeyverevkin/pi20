@@ -25,3 +25,7 @@ obj\
 /labs/.vs/labs/DesignTimeBuild
 /labs/Xml/obj/Debug
 /labs/packages/Newtonsoft.Json.13.0.1
+/labs/classes/Lab5Dll/bin/Debug
+/labs/classes/Lab5Dll/obj
+/labs/classes/Lab5Forms/bin/Debug
+/labs/classes/Lab5Forms/obj
