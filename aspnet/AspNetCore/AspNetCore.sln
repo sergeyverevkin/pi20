@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAspNetCore", "WebAspNetCore\WebAspNetCore.csproj", "{2E3FD1A4-3E40-4073-AB92-1D2D8FA2F89E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.WebAspNetCore", "WebAspNetCore\1.WebAspNetCore.csproj", "{2E3FD1A4-3E40-4073-AB92-1D2D8FA2F89E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcAspNetCore", "MvcAspNetCore\MvcAspNetCore.csproj", "{1508A934-3657-4C5F-AD5E-B750F7019DAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.MvcAspNetCore", "MvcAspNetCore\2.MvcAspNetCore.csproj", "{1508A934-3657-4C5F-AD5E-B750F7019DAF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiAspNetCore", "WebApiAspNetCore\WebApiAspNetCore.csproj", "{708D4277-C427-47C4-AEF8-EE6099FF805B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.WebApiAspNetCore", "WebApiAspNetCore\1.WebApiAspNetCore.csproj", "{708D4277-C427-47C4-AEF8-EE6099FF805B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebReactNetCore", "WebReactNetCore\WebReactNetCore.csproj", "{55EDA608-38D7-41A4-88CA-FB3FA1AE450F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.WebReactNetCore", "WebReactNetCore\3.WebReactNetCore.csproj", "{55EDA608-38D7-41A4-88CA-FB3FA1AE450F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.BlazorSignalRNetCore", "BlazorSignalRNetCore\2.BlazorSignalRNetCore.csproj", "{447C398C-A2A5-4C38-BD29-977F40AC7DEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Web", "1.Web", "{01ECFB2F-0D52-4253-B2BF-AEABD258A6C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Service", "2.Service", "{12605787-569B-47C6-BC8C-45233F514888}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,20 @@ Global
 		{55EDA608-38D7-41A4-88CA-FB3FA1AE450F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55EDA608-38D7-41A4-88CA-FB3FA1AE450F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55EDA608-38D7-41A4-88CA-FB3FA1AE450F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{447C398C-A2A5-4C38-BD29-977F40AC7DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{447C398C-A2A5-4C38-BD29-977F40AC7DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{447C398C-A2A5-4C38-BD29-977F40AC7DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{447C398C-A2A5-4C38-BD29-977F40AC7DEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E3FD1A4-3E40-4073-AB92-1D2D8FA2F89E} = {01ECFB2F-0D52-4253-B2BF-AEABD258A6C2}
+		{1508A934-3657-4C5F-AD5E-B750F7019DAF} = {01ECFB2F-0D52-4253-B2BF-AEABD258A6C2}
+		{708D4277-C427-47C4-AEF8-EE6099FF805B} = {12605787-569B-47C6-BC8C-45233F514888}
+		{55EDA608-38D7-41A4-88CA-FB3FA1AE450F} = {01ECFB2F-0D52-4253-B2BF-AEABD258A6C2}
+		{447C398C-A2A5-4C38-BD29-977F40AC7DEB} = {12605787-569B-47C6-BC8C-45233F514888}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {400E4A1F-07A5-41FC-AB90-F5C4D67225AE}
