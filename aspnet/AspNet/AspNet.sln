@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAspNet", "MvcAspNet\MvcAspNet.csproj", "{5F3B3687-8E32-41E7-AD09-561FB60F8DF7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.MvcAspNet", "MvcAspNet\2.MvcAspNet.csproj", "{5F3B3687-8E32-41E7-AD09-561FB60F8DF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsAspNet", "WebFormsAspNet\WebFormsAspNet.csproj", "{6311974E-E029-4E15-B81E-19E16E0EB236}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.WebFormsAspNet", "WebFormsAspNet\1.WebFormsAspNet.csproj", "{6311974E-E029-4E15-B81E-19E16E0EB236}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaAspNet", "SpaAspNet\SpaAspNet.csproj", "{25187A3B-E4D9-45FB-A662-E1188AE8F0A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.SpaAspNet", "SpaAspNet\3.SpaAspNet.csproj", "{25187A3B-E4D9-45FB-A662-E1188AE8F0A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
